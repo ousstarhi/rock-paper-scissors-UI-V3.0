@@ -40,6 +40,15 @@ body {
     transform: scale(1.1);
 }
 
+.modal {
+    width: 100%;
+    height: 70vh;
+    background-color: green;
+    position: absolute;
+    top: 100px;
+    z-index: 900;
+}
+
 
   
 
