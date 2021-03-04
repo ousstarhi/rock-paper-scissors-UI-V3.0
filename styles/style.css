@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+  .choice-images img {
+      height: 25vh;
+      width: auto;
+  }
+
+  #playground {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: blue;
+      height: 100vh;
+  }
+
+  #player-section, #computer-section {
+      background-color: brown;
+  }
