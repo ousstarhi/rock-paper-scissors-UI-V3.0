@@ -12,15 +12,15 @@ body {
 
 #modal {
     position: absolute;
-    top: -100px;
-    transition: top 1s ease, background-color 1s ease;
+    top: -70vh;
+    transition: top .5s ease-in-out;
+    width: 100%;
+    background-color: green;
+    height: 70vh;
+    z-index: 900;
 }
 #modal.modal {
-    width: 100%;
-    height: 70vh;
-    background-color: green;
-    top: 100px;
-    z-index: 900;
+    top: 15vh;
 }
 
 h1 {
