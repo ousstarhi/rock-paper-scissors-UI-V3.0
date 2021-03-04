@@ -1,28 +1,45 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-  }
-  *, *:before, *:after {
+}
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
   
-  body {
+body {
     margin: 0;
-  }
+}
 
-  .choice-images img {
-      height: 25vh;
-      width: auto;
-  }
+#playground {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+    height: 100vh;
+}
 
-  #playground {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color: blue;
-      height: 100vh;
-  }
+#player-section, #computer-section {
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-  #player-section, #computer-section {
-      background-color: brown;
-  }
+.choice-images img {
+    height: 25vh;
+    width: auto;
+    transition: all 1s ease;
+}
+
+.choice-images img:hover {
+    cursor: pointer;
+}
+
+.playing {
+    transform: scale(1.1);
+}
+
+
+  
+
