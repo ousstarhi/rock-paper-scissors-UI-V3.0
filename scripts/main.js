@@ -5,6 +5,7 @@ let playerChoice;
 let computerChoice;
 let playerScore = document.querySelector('#player-section p');
 let computerScore = document.querySelector('#computer-section p');
+const returnButton = document.querySelector('#modal button');
 function chooseRandom() {
     return Math.floor(Math.random() * 3);
 }
@@ -15,6 +16,12 @@ playerImages.forEach((image) => {
         image.classList.remove('playing');
     });
 });
+
+returnButton.addEventListener('click', () => {
+    playerScore.textContent = '0';
+    computerScore.textContent = '0';
+    modal.classList.remove('modal');
+})
 
 // Playing one round
 function playRound(e) {
@@ -69,6 +76,7 @@ function gameOver() {
 function showModal() {
         modal.classList.add('modal');
 }
+
 
 
 
