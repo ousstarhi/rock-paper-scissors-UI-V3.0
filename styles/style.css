@@ -15,7 +15,7 @@ body {
     top: -70vh;
     transition: top .5s ease-in-out;
     width: 100%;
-    background-color: green;
+    background-color: rgba(64, 109, 64, 0.39);
     height: 70vh;
     z-index: 900;
 }

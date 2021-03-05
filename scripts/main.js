@@ -6,6 +6,10 @@ let computerChoice;
 let playerScore = document.querySelector('#player-section p');
 let computerScore = document.querySelector('#computer-section p');
 const returnButton = document.querySelector('#modal button');
+const verdict = document.querySelector('#modal h1');
+const playerFinalScore = document.querySelector('#player');
+const computerFinalScore = document.querySelector('#computer');
+
 function chooseRandom() {
     return Math.floor(Math.random() * 3);
 }
@@ -42,6 +46,9 @@ function playRound(e) {
     });
     updateScore(playerChoice, computerChoice);
     if (gameOver()) {
+        verdict.textContent = getVerdict();
+        playerFinalScore.textContent += playerScore.textContent;
+        computerFinalScore.textContent += computerScore.textContent;
         setTimeout(showModal, 1000);
     }
 }
@@ -77,6 +84,13 @@ function showModal() {
         modal.classList.add('modal');
 }
 
+function getVerdict() {
+    if (computerScore.textContent === '5') {
+        return 'You lose!';
+    } else if (playerScore.textContent === '5') {
+        return 'You win!';
+    }
+}
 
 
 
