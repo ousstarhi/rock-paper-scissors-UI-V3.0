@@ -12,37 +12,46 @@
 <body>
     <!--Modal-->
     <div id="modal">
-        <h1>Game Over</h1>
+        <h2></h2>
+        <div id="final-score">
+            <h3 id="player">Your score is: </h3>
+            <h3 id="computer">The computer score is: </h3>
+        </div>
+        <button>Return</button>
     </div>
-
-    <!--Playground-->
-    <div id="playground">
-
-        <!--Player section-->
-        <div id="player-section">
-            <h2 class="name">Player</h2>
-            <p class="score">0</p>
-            <div class="choice-images">
-                <img data-choice="paper" src="media/paper.png" alt="">
-                <img data-choice="rock" src="media/rock.png" alt="">
-                <img data-choice="scissors" src="media/scissors.png" alt="">
+    <div id="front">
+        <header>
+            <h1>
+                Rock Paper Scissors
+            </h1>
+        </header>
+        <!--Playground-->
+        <div id="playground">
+        
+            <!--Player section-->
+            <div id="player-section">
+                <h2 class="name">Player</h2>
+                <p class="score">0</p>
+                <div class="choice-images">
+                    <img data-choice="paper" src="media/paper.png" alt="">
+                    <img data-choice="rock" src="media/rock.png" alt="">
+                    <img data-choice="scissors" src="media/scissors.png" alt="">
+                </div>
+            </div>
+            <!--Computer section-->
+            <div id="computer-section">
+                <h2 class="name">Computer</h2>
+                <p class="score">0</p>
+                <div class="choice-images">
+                    <img data-choice="paper" src="media/paper.png" alt="">
+                    <img data-choice="rock" src="media/rock.png" alt="">
+                    <img data-choice="scissors" src="media/scissors.png" alt="">
+                </div>
             </div>
         </div>
-
-        <!--Computer section-->
-        <div id="computer-section">
-            <h2 class="name">Computer</h2>
-            <p class="score">0</p>
-            <div class="choice-images">
-                <img data-choice="paper" src="media/paper.png" alt="">
-                <img data-choice="rock" src="media/rock.png" alt="">
-                <img data-choice="scissors" src="media/scissors.png" alt="">
-            </div>
-        </div>
-
     </div>
 
-    
+
 
 
     <script src="scripts/main.js"></script>

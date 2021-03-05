@@ -15,7 +15,7 @@ body {
     top: -70vh;
     transition: top .5s ease-in-out;
     width: 100%;
-    background-color: green;
+    background-color: rgba(64, 109, 64, 0.39);
     height: 70vh;
     z-index: 900;
 }
@@ -25,14 +25,18 @@ body {
 
 h1 {
     text-align: center;
+    margin-top: 0;
+}
+
+#front {
+    height: 100vh;
+    background-color: blue;
 }
 
 #playground {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: blue;
-    height: 100vh;
 }
 
 #player-section, #computer-section {
