@@ -25,14 +25,18 @@ body {
 
 h1 {
     text-align: center;
+    margin-top: 0;
+}
+
+#front {
+    height: 100vh;
+    background-color: blue;
 }
 
 #playground {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: blue;
-    height: 100vh;
 }
 
 #player-section, #computer-section {

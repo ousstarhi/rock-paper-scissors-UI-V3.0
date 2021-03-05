@@ -6,7 +6,7 @@ let computerChoice;
 let playerScore = document.querySelector('#player-section p');
 let computerScore = document.querySelector('#computer-section p');
 const returnButton = document.querySelector('#modal button');
-const verdict = document.querySelector('#modal h1');
+const verdict = document.querySelector('#modal h2');
 const playerFinalScore = document.querySelector('#player');
 const computerFinalScore = document.querySelector('#computer');
 
