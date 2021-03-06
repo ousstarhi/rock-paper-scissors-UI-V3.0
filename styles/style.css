@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -8,16 +10,27 @@ html {
   
 body {
     margin: 0;
+    font-family: 'Luckiest Guy', cursive;
+    color: #e45826;
+    background-color: #4a3933;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #modal {
     position: absolute;
     top: -70vh;
-    transition: top .5s ease-in-out;
+    transition: all .5s ease-in-out;
     width: 100%;
     background-color: rgba(64, 109, 64, 0.39);
     height: 70vh;
     z-index: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 #modal.modal {
     top: 15vh;
@@ -29,22 +42,34 @@ h1 {
 }
 
 #front {
-    height: 100vh;
-    background-color: blue;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #playground {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100vw;
 }
 
 #player-section, #computer-section {
-    background-color: brown;
+    background-color: #f0a500;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #4a3933;
+    height: 44vh;
+    border-radius: 10px;
+}
+
+.choice-images {
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .choice-images img {

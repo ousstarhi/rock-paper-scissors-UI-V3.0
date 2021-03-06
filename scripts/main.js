@@ -25,6 +25,8 @@ returnButton.addEventListener('click', () => {
     playerScore.textContent = '0';
     computerScore.textContent = '0';
     modal.classList.remove('modal');
+    playerFinalScore.textContent = "Your score is: ";
+    computerFinalScore.textContent = "The computer score is: ";
 })
 
 // Playing one round
