@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -8,6 +10,7 @@ html {
   
 body {
     margin: 0;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 #modal {
