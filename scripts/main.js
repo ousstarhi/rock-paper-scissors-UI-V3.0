@@ -59,21 +59,45 @@ function playRound(e) {
 function updateScore(player, computer) {
     if (player === 'paper') {
         if (computer === 'rock') {
+            playerScore.classList.add('score-changing')
             playerScore.textContent++;
+            playerScore.addEventListener('transitionend', () => {
+                playerScore.classList.remove('score-changing');
+            });
         } else if (computer === 'scissors') {
+            computerScore.classList.add('score-changing')
             computerScore.textContent++;
+            computerScore.addEventListener('transitionend', () => {
+                computerScore.classList.remove('score-changing');
+            });
         }
     } else if (player === 'rock') {
         if (computer === 'scissors') {
+            playerScore.classList.add('score-changing')
             playerScore.textContent++;
+            playerScore.addEventListener('transitionend', () => {
+                playerScore.classList.remove('score-changing');
+            });
         } else if (computer === 'paper') {
+            computerScore.classList.add('score-changing')
             computerScore.textContent++;
+            computerScore.addEventListener('transitionend', () => {
+                computerScore.classList.remove('score-changing');
+            });
         }
     } else if (player === 'scissors') {
         if (computer === 'paper') {
+            playerScore.classList.add('score-changing')
             playerScore.textContent++;
+            playerScore.addEventListener('transitionend', () => {
+                playerScore.classList.remove('score-changing');
+            });
         } else if (computer === 'rock') {
+            computerScore.classList.add('score-changing')
             computerScore.textContent++;
+            computerScore.addEventListener('transitionend', () => {
+                computerScore.classList.remove('score-changing');
+            });
         }
     }
 }

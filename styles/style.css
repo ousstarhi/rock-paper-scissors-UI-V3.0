@@ -83,6 +83,14 @@ h1 {
     width: 45%;
 }
 
+#playground p{
+    transition: all 1s ease;
+}
+.score-changing {
+    transform: scale(1.5) rotate(360deg);
+    color: green;
+}
+
 .choice-images {
     display: flex;
     justify-content: space-evenly;
