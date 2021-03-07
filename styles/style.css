@@ -51,9 +51,8 @@ h1 {
 
 #playground {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100vw;
 }
 
 #player-section, #computer-section {
@@ -63,18 +62,20 @@ h1 {
     justify-content: center;
     align-items: center;
     color: #4a3933;
-    height: 44vh;
     border-radius: 10px;
+    width: 45%;
 }
 
 .choice-images {
-    margin-left: 25px;
-    margin-right: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .choice-images img {
-    height: 25vh;
-    width: auto;
+    height: auto;
+    max-width: 20%;
     transition: all 1s ease;
 }
 
@@ -86,6 +87,29 @@ h1 {
     transform: scale(1.1);
 }
 
-
-  
+@media only screen and (max-width: 768px) {
+    #playground {
+        flex-direction: column;
+        height: 65vh;
+        justify-content: space-between;
+    }
+    #front {
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+    #player-section, #computer-section {
+        width: 85%;
+        height: 48%;
+    }
+    .choice-images {
+        margin: 0;
+    }
+    #playground h2 {
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+    #playground p {
+        margin-top: 5px;
+    }
+}
 
