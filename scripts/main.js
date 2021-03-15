@@ -21,7 +21,7 @@ playerImages.forEach((image) => {
     });
 });
 
-returnButton.addEventListener('click', () => {
+returnButton.addEventListener('click', (e) => {
     playerScore.textContent = '0';
     computerScore.textContent = '0';
     modal.classList.remove('modal');
@@ -37,7 +37,8 @@ function playRound(e) {
     e.target.classList.add('playing');
     playerChoice = e.target.dataset.choice;
     computerChoice = computerImages[chooseRandom()].dataset.choice;
-    console.log(computerChoice);
+    const audio = document.querySelector(`audio[data-choice ="${e.target.dataset.choice}"]`);
+    audio.play();
     computerImages.forEach((image) => {
         if (image.dataset.choice === computerChoice) {
             image.classList.add('playing');
